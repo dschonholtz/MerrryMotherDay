@@ -1,23 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Under construction!"/>
-    <p class="hello__mom">
-      Happy Mothers Day Mom!
-      I hope it is a good one :)
-      I love you lots and you mean the world to me.
-    </p>
+    <HomeTitle msg="Happy Mothers Day"/>
+    <HomeContent msg="Under construction!"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeTitle from '@/components/HomeTitle.vue'
+import HomeContent from '@/components/HomeContent.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    HomeTitle,
+    HomeContent
   }
 }
 </script>
+
+<style lang="scss">
+</style>

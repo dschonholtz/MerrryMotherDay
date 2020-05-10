@@ -1,0 +1,25 @@
+<template>
+  <div class="home-title">
+    <h1>{{ msg }}</h1>
+    <video class="flower-video" autoplay muted>
+        <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.webm" type="video/webm">
+        <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.mp4" type="video/mp4">
+        Your browser is not supported!
+    </video>
+  </div>
+</template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator'
+
+@Component
+export default class HomeTitle extends Vue {
+  @Prop() private msg!: string;
+}
+</script>
+
+<style lang="scss">
+h1 {
+  margin: 40px 0 0;
+}
+</style>
