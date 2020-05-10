@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <HomeTitle msg="Happy Mothers Day"/>
-    <HomeContent msg="Under construction!"/>
+    <HomeContent/>
   </div>
 </template>
 

@@ -10,6 +10,10 @@
           This website is built using VueJS 3.0.
           SCSS, and TypeScript.
       </p>
+      <p>
+        It also looks like a steaming hot pile of garbage
+        and I hate it.
+      </p>
     </div>
   </div>
 </template>

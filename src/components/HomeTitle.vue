@@ -1,12 +1,14 @@
 <template>
-  <div class="home-title">
-    <h1>{{ msg }}</h1>
-    <video class="flower-video" autoplay muted>
-        <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.webm" type="video/webm">
-        <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.mp4" type="video/mp4">
-        Your browser is not supported!
-    </video>
-  </div>
+  <transition name="fade" appear>
+    <div class="home-title">
+      <h1>{{ msg }}</h1>
+      <video class="flower-video" autoplay muted>
+          <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.webm" type="video/webm">
+          <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.mp4" type="video/mp4">
+          Your browser is not supported!
+      </video>
+    </div>
+  </transition>
 </template>
 
 <script lang="ts">
@@ -19,7 +21,19 @@ export default class HomeTitle extends Vue {
 </script>
 
 <style lang="scss">
-h1 {
-  margin: 40px 0 0;
-}
+  h1 {
+    font-size: 5rem;
+    margin: 40px 0 0;
+    color: #e67cc3;
+    font-family: antonine_personal_useregular;
+  }
+
+    .fade-enter {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+
+    .fade-enter-active {
+        transition: all .75s ease-in-out;
+    }
 </style>
