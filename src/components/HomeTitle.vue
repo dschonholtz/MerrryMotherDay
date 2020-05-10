@@ -2,7 +2,7 @@
   <transition name="fade" appear>
     <div class="home-title">
       <h1>{{ msg }}</h1>
-      <video class="flower-video" autoplay muted>
+      <video id="flower_video" class="flower-video" autoplay muted @mouseover="videoHover($event.target)">
           <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.webm" type="video/webm">
           <source alt="Pretty Flower Pic I swear" src="../assets/img/animatedBloomingFlower.mp4" type="video/mp4">
           Your browser is not supported!
@@ -17,6 +17,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator'
 @Component
 export default class HomeTitle extends Vue {
   @Prop() private msg!: string;
+  videoHover (video: HTMLVideoElement): void {
+    video.play()
+  }
 }
 </script>
 
