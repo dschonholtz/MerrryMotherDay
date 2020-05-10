@@ -23,7 +23,7 @@
               Sorry I couldn't get HappyMothersDay. It was taken. (And then I misspelled MerryMotherSDay so it isn't plural. Oops)
             </p>
             <p>
-              All the same I hope you have a wonderful day.
+              All the same, I hope you have a wonderful day.
             </p>
             <p class="signature">Lot's of love,<br>Douglas</p>
         </div>
